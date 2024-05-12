@@ -1,0 +1,46 @@
+
+.bubble-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 28em;
+  background-image: url("../public/images/bubbles.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bubble-heading h1 {
+  font-size: 2.5em;
+  margin: 1.5em 0 .5em;
+}
+
+.bubble-heading p a {
+  color: white;
+}
+
+.photo {
+  overflow: hidden;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  margin: 1em 0;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bubble-main { 
+  width: 65%;
+  padding: 1.5em;
+  margin: 0 auto;
+  line-height: 2em;
+}
+
+pre {line-height: 1.8em}

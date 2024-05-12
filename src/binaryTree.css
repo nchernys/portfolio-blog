@@ -1,0 +1,65 @@
+.binary-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    height: 28em;
+    background-color: black;
+
+  }
+  
+  .binary-heading .heading-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .binary-heading .heading-image {
+    width: auto;
+    height: 100%;
+  }
+
+  .binary-heading  .heading-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .binary-heading h1 {
+    font-size: 2.5em;
+    margin: 1.5em 0 .5em;
+  }
+  
+  .binary-heading p a {
+    color: white;
+  }
+  
+  .binary-heading .photo {
+    overflow: hidden;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin: 1.5em 0 1em;
+  }
+  
+  .binary-heading .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .binary-main { 
+    width: 65%;
+    padding: 1.5em;
+    margin: 0 auto;
+    line-height: 2em;
+  }
+  
+  .tree-svg {
+    width: 60%;
+    margin: 1em auto;
+  }
+
+  pre {line-height: 1.8em}
