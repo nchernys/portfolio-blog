@@ -107,7 +107,7 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <footer className="py-3 px-5 bg-black text-right d-flex justify-content-end">
+      <footer className="py-3 px-3 bg-black text-right d-flex justify-content-end">
         <a
           className="text-light text-decoration-none"
           href="https://nchernysheva.com"

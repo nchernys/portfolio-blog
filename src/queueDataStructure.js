@@ -120,10 +120,10 @@ const [pickUpIceCream, setPickUpIceCream] = useState("");
         <div className="overlay">
           <div className="heading-text">
             <h1>Queue Data Structure: how to code an ice-cream shop?</h1>
-            <p>
+            <div>
               <Link to="/">Blog</Link> by by{" "}
               <a href="https://nchernysheva.com">Natalia Chernysheva</a>
-            </p>
+            </div>
             <div className="photo">
               <img src="./images/chernysheva_photo_12.jpg" alt="photo" />{" "}
             </div>

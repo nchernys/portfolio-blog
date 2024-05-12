@@ -14,22 +14,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: absolute;
   }
 
   .binary-heading .heading-image {
     width: auto;
     height: 100%;
+    position: relative;
   }
 
   .binary-heading  .heading-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: .3;
   }
 
   .binary-heading h1 {
     font-size: 2.5em;
     margin: 1.5em 0 .5em;
+    text-align: center;
   }
   
   .binary-heading p a {
@@ -51,15 +56,45 @@
   }
   
   .binary-main { 
-    width: 65%;
+    width: 100%;
     padding: 1.5em;
     margin: 0 auto;
     line-height: 2em;
   }
   
+   
   .tree-svg {
     width: 60%;
     margin: 1em auto;
   }
 
   pre {line-height: 1.8em}
+
+
+  @media screen and (min-width: 600px) {
+
+    .binary-heading .heading-image {
+      width: auto;
+      height: 100%;
+      position: static;
+    }
+
+    .binary-heading .heading-text {
+      width: auto;
+      position: static;
+    }
+  
+    .binary-heading  .heading-image img {
+      opacity: 1;
+    }
+
+    .binary-main { 
+      width: 80%;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .binary-main { 
+      width: 65%;
+    }
+  }

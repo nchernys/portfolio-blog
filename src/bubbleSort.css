@@ -16,6 +16,7 @@
 .bubble-heading h1 {
   font-size: 2.5em;
   margin: 1.5em 0 .5em;
+  text-align: center;
 }
 
 .bubble-heading p a {
@@ -37,10 +38,17 @@
 }
 
 .bubble-main { 
-  width: 65%;
+  width: 100%;
   padding: 1.5em;
   margin: 0 auto;
   line-height: 2em;
 }
 
 pre {line-height: 1.8em}
+
+
+@media screen and (min-width: 600px) {
+  .bubble-main { 
+    width: 80%;
+  }
+}

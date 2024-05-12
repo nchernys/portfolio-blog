@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ComponentBlogReadMore = () => {
   return (
-    <div className="other-links my-5 py-5">
+    <div className="other-links mt-5 mb-3 py-5">
       <h3> Read more ... </h3>
       <ul className="my-3">
         <li className="my-3">

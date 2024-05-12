@@ -63,7 +63,7 @@ function BubbleSort() {
   return (
     <>
       <div className="bubble-heading">
-        <h1>Bubble Sort: How does it work?</h1>
+        <h1 className="px-3">Bubble Sort: How does it work?</h1>
         <p>
           <Link to="/">Blog</Link> by{" "}
           <a href="https://nchernysheva.com">Natalia Chernysheva</a>
@@ -131,9 +131,9 @@ function BubbleSort() {
           Unsort
         </button>
 
-        <ol className="book-list d-flex flex-wrap">
+        <ol className="book-list d-flex flex-wrap w-100">
           {booksList.map((book, index) => (
-            <li key={index} className="w-25 m-3">
+            <li key={index} className="p-3 col-12 col-md-6 col-lg-4">
               <div className="word-wrap">
                 <i>
                   <b>{book.title}</b>

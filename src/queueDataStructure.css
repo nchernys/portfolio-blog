@@ -1,7 +1,8 @@
 .queue-heading {
     width: 100%;
-       color: white;
-    height: 28em;
+    color: white;
+    height: auto;
+    min-height: 28em;
     background-color: black;
     background-image: url('../public/images/ice-cream.jpg');
     background-position: center;
@@ -27,7 +28,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 95%;
+    height: auto;
     margin: 0 auto;
     text-align: center;
   }
@@ -41,10 +43,10 @@
 
   .queue-heading h1 {
     font-size: 2.5em;
-    margin: 1.5em 0 .5em;
+    margin: 1em 0 .5em;
   }
   
-  .queue-heading p a {
+  .queue-heading div a {
     color: white;
   }
   
@@ -63,13 +65,12 @@
   }
   
   .queue-main { 
-    width: 65%;
+    width: 100%;
     padding: 1.5em;
     margin: 0 auto;
     line-height: 2em;
   }
   
-
   .queue-main .graph {
     display: flex;
     justify-content: center;
@@ -86,11 +87,13 @@
 .dashboard {
   padding: 2em 1em;
   justify-content: space-between;
+  align-items: center;
   font-size: .9em;
   flex-direction: column;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
+
 
   .screen {
     margin: .5em;
@@ -108,8 +111,9 @@
   }
 
   .dashboard .board {
-    width: 100%;
-    display: flex;   
+    width: 90%;
+    display: flex; 
+    flex-direction: column;  
   }
 
   .dashboard .illustration {
@@ -125,3 +129,34 @@
   }
 
   pre {line-height: 1.8em}
+
+
+  @media screen and (min-width: 600px) {
+    .queue-main { 
+      width: 80%;
+    }
+
+    .dashboard {
+      width: 85%;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .queue-main { 
+      width: 65%;
+    }
+
+    .queue-heading .heading-text {
+      width: 65%;
+    }
+
+    .dashboard {
+      width: 100%;
+    }
+
+    .dashboard .board {
+      width: 90%;
+      display: flex; 
+      flex-direction: row;  
+    }
+  }
