@@ -15,9 +15,14 @@ const ComponentBlogReadMore = () => {
             Data Structures and Algorithms: Bubble Sort and how to use it?
           </a>
         </li>
-        <li>
+        <li className="my-3">
           <a href="/blog-queue-structure" className="text-secondary">
             Queue Data Structure: how to code an ice-cream shop?
+          </a>
+        </li>
+        <li className="my-3">
+          <a href="/blog-instagram-feed" className="text-secondary">
+            How to integrate your Instagram feed in your website?
           </a>
         </li>
       </ul>

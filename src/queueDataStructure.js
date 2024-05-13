@@ -116,21 +116,21 @@ const [pickUpIceCream, setPickUpIceCream] = useState("");
 
   return (
     <>
-      <div className="queue-heading">
+      <div className="header queue-heading">
         <div className="overlay">
           <div className="heading-text">
             <h1>Queue Data Structure: how to code an ice-cream shop?</h1>
-            <div>
+            <p>
               <Link to="/">Blog</Link> by by{" "}
               <a href="https://nchernysheva.com">Natalia Chernysheva</a>
-            </div>
+            </p>
             <div className="photo">
               <img src="./images/chernysheva_photo_12.jpg" alt="photo" />{" "}
             </div>
           </div>
         </div>
       </div>
-      <div className="queue-main">
+      <div className="main">
         <div className="w-100 my-4">
           <h4 className="mt-5">What is a queue?</h4>
           <p>

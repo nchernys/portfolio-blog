@@ -1,0 +1,50 @@
+.header-background {
+    background-color: rgb(87,45,173);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-image-insta {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+.header-text {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    justify-content: center;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(41, 27, 67, 0.55);
+  color: white;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 600px) {
+.header-text {
+    position: static;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+   } 
+}
+
+
+.header-text p a {
+    color: inherit;
+}
+
+.header-image-insta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider {
+    scrollbar-color: #6c6c6c #353535;
+  }

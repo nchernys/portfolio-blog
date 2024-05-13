@@ -1,4 +1,5 @@
 import "./bubbleSort.css";
+import "./style.css";
 import { useState, useEffect, useRef } from "react";
 import books from "./booksData";
 import "bootstrap/dist/css/bootstrap.css";
@@ -62,17 +63,19 @@ function BubbleSort() {
 
   return (
     <>
-      <div className="bubble-heading">
-        <h1 className="px-3">Bubble Sort: How does it work?</h1>
-        <p>
-          <Link to="/">Blog</Link> by{" "}
-          <a href="https://nchernysheva.com">Natalia Chernysheva</a>
-        </p>
-        <div className="photo">
-          <img src="./images/chernysheva_photo_3.jpg" alt="photo" />{" "}
+      <div className="header bubble-heading">
+        <div className="header-text">
+          <h1 className="px-3">Bubble Sort: How does it work?</h1>
+          <p>
+            <Link to="/">Blog</Link> by{" "}
+            <a href="https://nchernysheva.com">Natalia Chernysheva</a>
+          </p>
+          <div className="photo">
+            <img src="./images/chernysheva_photo_3.jpg" alt="photo" />{" "}
+          </div>
         </div>
       </div>
-      <div className="bubble-main">
+      <div className="main">
         <div className="w-100 my-4">
           <p>
             What is Bubble Sort? The Bubble Sort algorithm efficiently sorts an

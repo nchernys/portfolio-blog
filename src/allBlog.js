@@ -1,5 +1,6 @@
 import "./allBlog.css";
 import { Link } from "react-router-dom";
+import InstagramFeed from "./instagramFeedAPI";
 
 const Blog = () => {
   return (
@@ -42,69 +43,117 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="main">
-        <div className="blog-entry">
-          <p>Blog</p>
-          <h4>Binary Search Tree: how to use?</h4>
+      <div className="w-auto mx-auto container d-flex justify-content-evenly justify-content-lg-between  justify-content-xl-evenly flex-wrap py-5">
+        <div
+          className="card m-2 pb-2"
+          style={{ width: "16em", height: "30em" }}
+        >
           <div className="img">
-            <img src="./images/binary-tree.jpg" alt="" />
-          </div>
-          <a href="/blog-binary-search">
             <img
-              className="arrow"
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
-              alt="circled-right-2"
+              className="object-fit-cover w-100 h-100"
+              src="./images/binary-tree.jpg"
+              alt=""
             />
-          </a>
+          </div>
+          <div className="card-body">
+            {" "}
+            <p>Blog</p>
+            <p className="h5 fw-bold">Binary Search Tree: how to use?</p>
+          </div>
+          <button className="btn d-flex">
+            <a href="/blog-binary-search">
+              <img
+                className="arrow"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
+                alt="circled-right-2"
+              />
+            </a>
+          </button>
         </div>
-        <div className="blog-entry">
-          <p>Blog</p>
-          <h4>Bubble Sort: simple and efficient!</h4>
+        <div
+          className="card m-2  pb-2"
+          style={{ width: "16em", height: "30em" }}
+        >
           <div className="img">
-            <img src="./images/bubbles.jpg" alt="" />
-          </div>
-          <a href="/blog-bubble-sort">
             <img
-              className="arrow"
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
-              alt="circled-right-2"
+              className="object-fit-cover w-100 h-100"
+              src="./images/blog-insta.jpg"
+              alt=""
             />
-          </a>
+          </div>
+          <div className="card-body">
+            <p>Blog</p>
+            <p className="h5 fw-bold">How to integrate an Instragram feed?</p>
+          </div>
+          <button className="btn d-flex">
+            <a href="/blog-instagram-feed">
+              <img
+                className="arrow"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
+                alt="circled-right-2"
+              />
+            </a>
+          </button>
         </div>
-        <div className="blog-entry">
-          <p>Blog</p>
-          <h4>Queue Data Structure: how to code an ice-cream shop? </h4>
+        <div
+          className="card m-2  pb-2"
+          style={{ width: "16em", height: "30em" }}
+        >
           <div className="img">
-            <img src="./images/ice-cream.jpg" alt="" />
-          </div>
-          <a href="/blog-queue-structure">
             <img
-              className="arrow"
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
-              alt="circled-right-2"
+              className="object-fit-cover w-100 h-100"
+              src="./images/bubbles.jpg"
+              alt=""
             />
-          </a>
+          </div>
+          <div className="card-body">
+            <p>Blog</p>
+            <p className="h5 fw-bold">Bubble Sort: simple and efficient!</p>
+          </div>
+          <button className="btn d-flex">
+            <a href="/blog-bubble-sort">
+              <img
+                className="arrow"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
+                alt="circled-right-2"
+              />
+            </a>
+          </button>
         </div>
-        <div className="blog-entry">
-          <p>Blog</p>
-          <h4>To be continued...</h4>
+        <div
+          className="card m-2 pb-2"
+          style={{ width: "16em", height: "30em" }}
+        >
           <div className="img">
-            <img src="./images/coding.jpg" alt="" />
-          </div>
-          <p>
             <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/100/CCCDCF/circled-right-2.png"
-              alt="circled-right-2"
+              className="object-fit-cover w-100 h-100"
+              src="./images/ice-cream.jpg"
+              alt=""
             />
-          </p>
+          </div>
+          <div className="card-body">
+            <p>Blog</p>
+            <p className="h5 fw-bold">
+              Queue Data Structure: how to code an ice-cream shop?{" "}
+            </p>
+          </div>
+          <button className="btn d-flex">
+            <a href="/blog-queue-structure">
+              <img
+                className="arrow"
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
+                alt="circled-right-2"
+              />
+            </a>
+          </button>
         </div>
       </div>
       <footer className="py-3 px-3 bg-black text-right d-flex justify-content-end">

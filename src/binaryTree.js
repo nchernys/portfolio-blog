@@ -111,7 +111,7 @@ const BinaryTree = () => {
           </div>
         </div>
       </div>
-      <div className="binary-main">
+      <div className="main">
         <div className="w-100 my-4">
           <h4 className="mt-5">What is a binary tree?</h4>
           <p>
