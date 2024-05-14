@@ -1,0 +1,7 @@
+const config = {
+  apiKey:
+    "IGQWROc2RCWjdnTVQtQllzZA1djTmhBeGtoZAjRVelJGZAFdqdmJXdHNNWWx3YjBHUTVNY3VZAci1MNVdVYXJZAMXBQZAE1UN1d5aHBTOHBFU0FrbklfanFVbmVkQWxJN2RfOFVXMm9hZAkVCbkFKZAwZDZD",
+  apiUserId: "7929113320452188",
+};
+
+export default config;
