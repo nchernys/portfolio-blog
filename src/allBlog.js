@@ -61,7 +61,7 @@ const Blog = () => {
             <p className="h5 fw-bold">Binary Search Tree: how to use?</p>
           </div>
           <button className="btn d-flex">
-            <a href="/blog-binary-search">
+            <a href="https://blog.nchernysheva.com/blog-binary-search">
               <img
                 className="arrow"
                 width="50"
@@ -119,7 +119,7 @@ const Blog = () => {
             <p className="h5 fw-bold">Bubble Sort: simple and efficient!</p>
           </div>
           <button className="btn d-flex">
-            <a href="/blog-bubble-sort">
+            <a href="https://blog.nchernysheva.com/blog-bubble-sort">
               <img
                 className="arrow"
                 width="50"
@@ -148,7 +148,7 @@ const Blog = () => {
             </p>
           </div>
           <button className="btn d-flex">
-            <a href="/blog-queue-structure">
+            <a href="https://blog.nchernysheva.com/blog-queue-structure">
               <img
                 className="arrow"
                 width="50"
