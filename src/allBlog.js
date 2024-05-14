@@ -61,7 +61,7 @@ const Blog = () => {
             <p className="h5 fw-bold">Binary Search Tree: how to use?</p>
           </div>
           <button className="btn d-flex">
-            <a href="https://blog.nchernysheva.com/blog-binary-search">
+            <Link to="/blog-binary-search">
               <img
                 className="arrow"
                 width="50"
@@ -69,7 +69,7 @@ const Blog = () => {
                 src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
                 alt="circled-right-2"
               />
-            </a>
+            </Link>
           </button>
         </div>
 
@@ -119,7 +119,7 @@ const Blog = () => {
             <p className="h5 fw-bold">Bubble Sort: simple and efficient!</p>
           </div>
           <button className="btn d-flex">
-            <a href="https://blog.nchernysheva.com/blog-bubble-sort">
+            <Link to="/blog-bubble-sort">
               <img
                 className="arrow"
                 width="50"
@@ -127,7 +127,7 @@ const Blog = () => {
                 src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
                 alt="circled-right-2"
               />
-            </a>
+            </Link>
           </button>
         </div>
         <div
@@ -148,7 +148,7 @@ const Blog = () => {
             </p>
           </div>
           <button className="btn d-flex">
-            <a href="https://blog.nchernysheva.com/blog-queue-structure">
+            <Link to="/blog-queue-structure">
               <img
                 className="arrow"
                 width="50"
@@ -156,7 +156,7 @@ const Blog = () => {
                 src="https://img.icons8.com/ios-filled/100/circled-right-2.png"
                 alt="circled-right-2"
               />
-            </a>
+            </Link>
           </button>
         </div>
       </div>
