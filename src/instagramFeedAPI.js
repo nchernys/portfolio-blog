@@ -120,7 +120,7 @@ const InstagramFeed = () => {
         </pre>
         <p>
           Open a new browser window and load the Authorization Window URL. It
-          should appear and display your Instagram user’s name, the app’s name,
+          should appear and display your Instagram user's name, the app’s name,
           and a description of the permissions your app is requesting. Log in
           and click Authorize to grant your app access to your profile data.
           Upon success, the page will redirect you to the redirect URI you
@@ -158,7 +158,58 @@ const InstagramFeed = () => {
           <strong>"user_id": 17841405793187218</strong>. You will need the token
           and the user_id to consruct your query in your code - save it!
         </p>
-        <h4 className="fw-bold my-4">4. Finally, in your code! </h4>
+        <h4 className="fw-bold my-4">4. Short-lived vs. long-lived token?! </h4>
+        <p>
+          The token you have just received is short-lived, which means it will
+          expire in 1 hour. However, you can upgrade it to a long-lived token
+          which is valid for 60 days and can be easily refreshed!
+        </p>
+        <p>
+          Your request must be made server-side and include: a valid (unexpired)
+          short-lived Instagram User Access Token and Your Instagram App Secret
+          (App Dashboard &#8658; Products &#8658; Instagram &#8658; Basic
+          Display &#8658; Instagram App Secret)
+        </p>
+
+        <pre>
+          <code>
+            {`
+    curl -i -X GET "https://graph.instagram.com/access_token
+    ?grant_type=ig_exchange_token
+    &client_secret={instagram-app-secret}
+    &access_token={short-lived-access-token}"
+  `}
+          </code>
+        </pre>
+
+        <p>In the response, you will get: </p>
+        <pre>
+          <code>{`
+    {
+      "access_token":"{long-lived-user-access-token}",
+      "token_type": "bearer",
+      "expires_in": 5183944  // Number of seconds until token expires
+    }
+        `}</code>
+        </pre>
+        <p>You will use your long-lived access token to make your queries!</p>
+
+        <p>
+          To refresh your <strong>unexpired</strong> long-lived token, you
+          should use the following query:
+        </p>
+
+        <pre>
+          <code>
+            {`
+    curl -i -X GET "https://graph.instagram.com/refresh_access_token
+    ?grant_type=ig_refresh_token
+    &access_token={long-lived-access-token}"
+  `}
+          </code>
+        </pre>
+
+        <h4 className="fw-bold my-4">5. Finally, in your code! </h4>
         <p>
           Congratulations! You made it! You can now go to your code and add the
           query to the Instagram API to fetch media from your instagram feed! I
