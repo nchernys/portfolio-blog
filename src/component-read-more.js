@@ -7,7 +7,8 @@ const ComponentBlogReadMore = () => {
       <ul className="my-3">
         <li className="my-3">
           <a href="/blog-binary-search" className="text-secondary">
-            Data Structures and Algorithms: What is a Binary Search Tree?
+            Data Structures and Algorithms: What is a Binary Search Tree and how
+            to use it to design a word autocomplete?
           </a>
         </li>
         <li className="my-3">

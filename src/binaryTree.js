@@ -101,7 +101,9 @@ const BinaryTree = () => {
           <img src="./images/binary-tree-sm.jpg" />
         </div>
         <div className="heading-text">
-          <h1>How to run a Binary Search Tree?</h1>
+          <h1>
+            How to use a Binary Search Tree to design a word autocomplete?
+          </h1>
           <p>
             <Link to="/">Blog</Link> by by{" "}
             <a href="https://nchernysheva.com">Natalia Chernysheva</a>
@@ -115,11 +117,11 @@ const BinaryTree = () => {
         <div className="w-100 my-4">
           <h4 className="mt-5">What is a binary tree?</h4>
           <p>
-            What is a binary tree? A binary tree is a non-linear data structure
-            that represents an hierarchy with nodes which can have up to two
-            children. In a binary tree, the values on the left from the node are
-            smaller than the node value and the values on the right of the node
-            are greater than the node value.{" "}
+            What is a binary search tree? A binary search tree is a non-linear
+            data structure that represents an hierarchy with nodes which can
+            have up to two children. In a binary search tree, the values on the
+            left from the node are smaller than the node value and the values on
+            the right of the node are greater than the node value.{" "}
           </p>
           <p>
             <span className="tree-svg">
