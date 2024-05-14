@@ -72,6 +72,8 @@ const Blog = () => {
             </a>
           </button>
         </div>
+
+        {/*
         <div
           className="card m-2  pb-2"
           style={{ width: "16em", height: "30em" }}
@@ -83,6 +85,7 @@ const Blog = () => {
               alt=""
             />
           </div>
+        
           <div className="card-body">
             <p>Blog</p>
             <p className="h5 fw-bold">How to integrate an Instragram feed?</p>
@@ -99,6 +102,7 @@ const Blog = () => {
             </a>
           </button>
         </div>
+        */}
         <div
           className="card m-2  pb-2"
           style={{ width: "16em", height: "30em" }}

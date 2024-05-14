@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.dde78e35.css",
-    "main.js": "/static/js/main.2f47a62c.js",
+    "main.js": "/static/js/main.79b4de0c.js",
     "static/media/bubbles.jpeg": "/static/media/bubbles.fece6b66ab3106f7ff2d.jpeg",
     "static/media/ice-cream.jpg": "/static/media/ice-cream.b0b5aab9603b4fd3d653.jpg",
     "index.html": "/index.html",
     "main.dde78e35.css.map": "/static/css/main.dde78e35.css.map",
-    "main.2f47a62c.js.map": "/static/js/main.2f47a62c.js.map"
+    "main.79b4de0c.js.map": "/static/js/main.79b4de0c.js.map"
   },
   "entrypoints": [
     "static/css/main.dde78e35.css",
-    "static/js/main.2f47a62c.js"
+    "static/js/main.79b4de0c.js"
   ]
 }
