@@ -122,10 +122,10 @@ const InstagramFeed = () => {
           Open a new browser window and load the Authorization Window URL. It
           should appear and display your Instagram user's name, the app’s name,
           and a description of the permissions your app is requesting. Log in
-          and click Authorize to grant your app access to your profile data.
-          Upon success, the page will redirect you to the redirect URI you
-          included in the previous step and append an Authorization Code. Don't
-          close the window!
+          and click Allow to grant your app access to your profile data. Upon
+          success, the page will redirect you to the redirect URI you included
+          in the previous step and append an Authorization Code.{" "}
+          <strong>Don't close the window!</strong>
         </p>
         <p>
           In your browser address line you will see a long string consisting of
@@ -158,7 +158,7 @@ const InstagramFeed = () => {
           <strong>"user_id": 17841405793187218</strong>. You will need the token
           and the user_id to consruct your query in your code - save it!
         </p>
-        <h4 className="fw-bold my-4">4. Short-lived vs. long-lived token?! </h4>
+        <h4 className="fw-bold my-4">4. Short-lived vs. long-lived token? </h4>
         <p>
           The token you have just received is short-lived, which means it will
           expire in 1 hour. However, you can upgrade it to a long-lived token
@@ -171,7 +171,7 @@ const InstagramFeed = () => {
           Display &#8658; Instagram App Secret)
         </p>
 
-        <pre>
+        <pre className="bg-dark text-white w-100">
           <code>
             {`
     curl -i -X GET "https://graph.instagram.com/access_token
@@ -183,7 +183,7 @@ const InstagramFeed = () => {
         </pre>
 
         <p>In the response, you will get: </p>
-        <pre>
+        <pre className="bg-dark text-white w-100">
           <code>{`
     {
       "access_token":"{long-lived-user-access-token}",
@@ -199,7 +199,7 @@ const InstagramFeed = () => {
           should use the following query:
         </p>
 
-        <pre>
+        <pre className="bg-dark text-white w-100">
           <code>
             {`
     curl -i -X GET "https://graph.instagram.com/refresh_access_token
@@ -232,7 +232,7 @@ const InstagramFeed = () => {
           https://graph.instagram.com/ + your user_id from the step above or you
           can just use "me" + media fields you would like to fetch: id, caption,
           media_type, media_url, children, children
-          {`{media_url}`} + your access token{" "}
+          {`{media_url}`} + your long-lived access token.
         </p>
         <p>
           Unless specified otherwise, the query will return only the ids of the
