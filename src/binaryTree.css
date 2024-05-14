@@ -4,9 +4,8 @@
     justify-content: flex-start;
     align-items: center;
     color: white;
-    height: 28em;
+    height: 30em;
     background-color: black;
-
   }
   
   .binary-heading .heading-text {
@@ -33,7 +32,7 @@
 
   .binary-heading h1 {
     font-size: 2.5em;
-    margin: 1.5em 0 .5em;
+    margin: .5em 0;
     text-align: center;
   }
   

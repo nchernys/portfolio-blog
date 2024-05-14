@@ -100,9 +100,9 @@ const BinaryTree = () => {
         <div className="heading-image">
           <img src="./images/binary-tree-sm.jpg" />
         </div>
-        <div className="heading-text">
-          <h1>
-            How to use a Binary Search Tree to design a word autocomplete?
+        <div className="heading-text px-1 px-lg-5">
+          <h1 className="px-3">
+            How to code an input autocomplete with a Binary Search Tree?
           </h1>
           <p>
             <Link to="/">Blog</Link> by by{" "}
@@ -115,7 +115,7 @@ const BinaryTree = () => {
       </div>
       <div className="main">
         <div className="w-100 my-4">
-          <h4 className="mt-5">What is a binary tree?</h4>
+          <h4 className="mt-5">What is a binary search tree?</h4>
           <p>
             What is a binary search tree? A binary search tree is a non-linear
             data structure that represents an hierarchy with nodes which can
