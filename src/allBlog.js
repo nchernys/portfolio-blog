@@ -1,6 +1,5 @@
 import "./allBlog.css";
 import { Link } from "react-router-dom";
-import InstagramFeed from "./instagramFeedAPI";
 
 const Blog = () => {
   return (

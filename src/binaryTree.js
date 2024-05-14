@@ -122,9 +122,9 @@ const BinaryTree = () => {
             are greater than the node value.{" "}
           </p>
           <p>
-            <div className="tree-svg">
+            <span className="tree-svg">
               <img src="./images/binary-search-tree.svg" />
-            </div>
+            </span>
           </p>
           <p>
             {" "}
