@@ -10,7 +10,7 @@ const InstagramFeed = () => {
     const fetchInstagramMedia = async () => {
       try {
         const response = await fetch(
-          `https://graph.instagram.com/me/media?fields=id,caption,children{media_url},media_type,media_url,username,timestamp&access_token=${process.env.REACT_APP_TOKEN}`
+          `https://graph.instagram.com/7929113320452188/media?fields=id,caption,children{media_url},media_type,media_url,username,timestamp&access_token=IGQWRQZA2ZA3MkNwS2w3UURkZA0hrV3FNY2VTY3hfamhrZAFROMVNnYlAxVmxLUVRlalBvY05ETlRQR045T3IzVW1wNWR3VFRLTENRcDgtOGZAmVUdSTGdIdUtxcm5lcWZA1emR5bXN0YjF2NUdGdwZDZD`
         );
         const data = await response.json();
 
