@@ -63,7 +63,7 @@ function BubbleSort() {
 
   return (
     <>
-      <div className="header bubble-heading">
+      <div className="bubble-heading">
         <div className="header-text">
           <h1 className="px-3">Bubble Sort: How does it work?</h1>
           <p>
