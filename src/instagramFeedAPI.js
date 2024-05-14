@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./instagramFeedAPI.css";
 import ComponentBlogReadMore from "./component-read-more";
-import config from "./config";
 
 const InstagramFeed = () => {
   const [media, setMedia] = useState([]);
@@ -11,7 +10,7 @@ const InstagramFeed = () => {
     const fetchInstagramMedia = async () => {
       try {
         const response = await fetch(
-          `https://graph.instagram.com/me/media?fields=id,caption,children{media_url},media_type,media_url,username,timestamp&access_token=${config.apiKey}`
+          `https://graph.instagram.com/me/media?fields=id,caption,children{media_url},media_type,media_url,username,timestamp&access_token=${process.env.REACT_APP_TOKEN}`
         );
         const data = await response.json();
 
